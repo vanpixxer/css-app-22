@@ -21,13 +21,47 @@ body {
 
 .main-header {
   width: 100%;
-  background: #b22148;
-  padding: 10px 20px;
+  background: #5c493d;
+  padding: 8px 16px;
 }
-.main-header a {
+
+/* we want the logo to appear on the same line as the navigation links so make it inline-block */
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-header__brand {
+  color: #b22148;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:22px;
+  background: #f0d442;
+  padding: 9px 15px;
+  margin-right: 40px;
+}
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item  {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
   color: #ffebbf;
 }
 
-.main-nav__item {
-  display: inline-block;
-}
+
+
+
