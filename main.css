@@ -9,7 +9,7 @@ body {
 }
 
 #product-overview {
-  background: url("freedom.jpg");
+  background: url('freedom.jpg');
   width: 100%;
   height: 525px;
   padding: 10px;
@@ -23,6 +23,12 @@ body {
 
 #product-overview h1 {
   color: #b22148;
+}
+
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .plan {
@@ -46,11 +52,9 @@ body {
   background: #fefdf5;
   color: #b22148;
   padding: 8px;
- box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
- border-radius: 8px;
-} 
-
-
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
 
 .plan__features {
   list-style: none;
@@ -60,39 +64,6 @@ body {
 
 .plan__features li {
   margin: 8px 0;
-}
-
-.button {
-  background: #b22148;;
-  border: 2px solid #fefdf5;
-  font: inherit;
-  padding: 10px 12px;
-  border-radius: 6px;
-  color: #fefdf5;
-  margin: 12px 0;
-  cursor: pointer;
-}
-
-/* Get rid of the blue outline that appears by default on 'focus' */
-.button:focus {
-  outline: none;
-}
-
-.button:hover,
-.button:active {
-  background: #fefdf5;
-  color: #b22148;
-}
-
-.button--highlighted {
-  background: #fefdf5;
-  color: #b22148;
-  font-weight: bold;
-}
-
-.button--highlighted:hover {
-  background: #b22148;
-  color: #fefdf5;
 }
 
 #key-features {
@@ -135,55 +106,5 @@ body {
   background: #b22148;
   padding: 20px 16px;
 }
-
-/* we want the logo to appear on the same line as the navigation links so make it inline-block */
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-.main-header__brand {
-  color: #b22148;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:22px;
-  background: #fbc35d;
-  padding: 9px 15px;
-  margin-right: 40px;
-  border-radius: 12px;
-}
-.main-nav {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-nav__item  {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-nav__item a {
-  text-decoration: none;
-  color: #ffebbf;
-  border: 2px solid #ffebbf;
-  padding: 10px 20px;
-  position: relative;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: #f59330;
-  border: 2px solid #f59330;
-}
-
-
-
-
-
 
 
