@@ -10,8 +10,12 @@ body {
 
 .main-header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #b22148;
   padding: 20px 16px;
+  z-index: 1;
 }
 
 /* we want the logo to appear on the same line as the navigation links so make it inline-block */

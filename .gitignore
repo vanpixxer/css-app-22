@@ -1,64 +1,44 @@
 
 Skip to content
-
-    Product 
-
-Team
-Enterprise
-Explore
-Marketplace
-Pricing
-
+All gists
+Back to GitHub
 Sign in
 Sign up
-github /
-gitignore
-Public
+
+Instantly share code, notes, and snippets.
+@samstewart
+samstewart/macos_x_ios_gitignore
+Created 11 years ago
+
+0
+
+    1
 
 Code
-Pull requests 286
-Actions
-Security
-
-    Insights
-
-gitignore/Global/macOS.gitignore
-@danilcha
-danilcha .DS_Store is a file name, not an extension
-Latest commit 2bb963b on Jul 6, 2017
-History
-4 contributors
-@spencermathews
-@utkonos
-@johemst
-@danilcha
-27 lines (22 sloc) 402 Bytes
-# General
+Revisions 1
+Forks 1
+.gitignore file for Mac OS X and iOS applications
+macos_x_ios_gitignore
+# Exclude the build directory
+build/*
+ 
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+ 
+# Exclude OS X folder attributes
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+ 
+# Exclude user-specific XCode 3 and 4 files
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+to join this conversation on GitHub. Already have an account? Sign in to comment
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
