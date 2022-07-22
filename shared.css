@@ -28,10 +28,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
-  background: #fbc35d;
-  padding: 9px 15px;
-  margin-right: 40px;
-  border-radius: 12px;
+  width: 50px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  width: 100%;
 }
 .main-nav {
   display: inline-block;
@@ -123,4 +125,3 @@ body {
   background: #b22148;
   color: #fefdf5;
 }
-
