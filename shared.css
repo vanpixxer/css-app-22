@@ -8,13 +8,25 @@ body {
   padding: 0;
 }
 
+/* Styles for Modal in page */
+.backdrop {
+  position: fixed;
+  display: none; 
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .main-header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background: #b22148;
-  padding: 20px 16px;
+  padding: 0.5rem 1rem;
   z-index: 1;
 }
 
@@ -27,7 +39,7 @@ body {
   color: #b22148;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.25rem;
   width: 50px;
   display: inline-block;
 }
@@ -37,6 +49,7 @@ body {
 }
 .main-nav {
   display: inline-block;
+  text-align: right;
   vertical-align: middle;
 }
 
@@ -48,27 +61,24 @@ body {
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav__item a {
   text-decoration: none;
   color: #ffebbf;
-  border: 2px solid #ffebbf;
-  padding: 10px 20px;
   position: relative;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: #f59330;
-  border: 2px solid #f59330;
 }
 
 .main-footer {
   background: #170703;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -80,7 +90,7 @@ body {
 
 .main-footer__link {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -97,10 +107,10 @@ body {
   background: #b22148;
   border: 2px solid #fefdf5;
   font: inherit;
-  padding: 10px 12px;
+  padding: 0.6rem 0.75rem;
   border-radius: 6px;
   color: #fefdf5;
-  margin: 12px 0;
+  margin: 0.75rem 0;
   cursor: pointer;
 }
 

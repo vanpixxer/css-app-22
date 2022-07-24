@@ -9,25 +9,29 @@ body {
 }
 
 #product-overview {
-  background: url('freedom.jpg');
+  background: linear-gradient(to top , rgba(240, 212, 66, 0.7), transparent), url('freedom.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 700px;
-  padding: 10px;
-  margin-top: 45px;
+  /*background-image: linear-gradient(to left bottom, #fbc35d, #dd8b97);*/
+  /*background-image: radial-gradient(circle at top, #fbc35d, #f467ab); */
+  width: 100vw;
+  height: 75vh;
+  margin-top: 2.75rem;
   position: relative;
 }
 
 #product-overview h1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: #fefdf5;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
 }
 
 .section-title {
   color: #b22148;
   text-align: center;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 #product-overview h1 {
@@ -36,15 +40,15 @@ body {
 
 .plan__list {
   width: 80%;
-  margin: auto;
+  margin: auto; 
   text-align: center;
 }
 
 .plan {
   background: #b55b7f;
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -69,6 +73,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.plan__feature {
+  margin: 8px 0;
 }
 
 .plan__features li {
@@ -102,18 +110,19 @@ body {
   border: 2px solid #fefdf5;
   border-radius: 50%;
   margin: auto;
+  padding: 20px;
 }
 
 .key-feature__description {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .main-header {
   width: 100%;
   background: #b22148;
-  padding: 20px 16px;
+  padding: 1rem 1.5rem;
 }
 
 
