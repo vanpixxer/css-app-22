@@ -9,7 +9,8 @@ body {
 }
 
 #product-overview {
-  background: linear-gradient(to top , rgba(240, 212, 66, 0.7), transparent), url('freedom.jpg');
+  background: linear-gradient(to top, rgba(240, 212, 66, 0.7), transparent),
+    url('freedom.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   /*background-image: linear-gradient(to left bottom, #fbc35d, #dd8b97);*/
@@ -40,7 +41,7 @@ body {
 
 .plan__list {
   width: 80%;
-  margin: auto; 
+  margin: auto;
   text-align: center;
 }
 
@@ -125,4 +126,52 @@ body {
   padding: 1rem 1.5rem;
 }
 
+/* MODAL STYLES */
+.modal {
+  position: fixed;
+  display: none; 
+  z-index: 200;
+  top: 20%;
+  left:30%;
+  width: 40%;
+  background: #fefdf5;
+  padding: 1rem;
+  border: 2px solid #f467ab;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
+.modal-title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #dd8b97;
+  background: #dd8b97;
+  text-decoration: none;
+  color: #fefdf5;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #b55b7f;
+  border-color: #b55b7f;
+}
+
+.modal__action--negative {
+  background: #b22148;
+  border-color: #b22148;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #b55b7f;
+  border-color: #b55b7f;
+}
