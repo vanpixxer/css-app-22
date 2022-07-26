@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+main {
+  min-height: calc(100vh - 3.5rem - 8rem);
+  margin-top: 3.5rem;
+}
+
 /* Styles for Modal in page */
 .backdrop {
   position: fixed;
@@ -62,26 +67,30 @@ body {
   color: #b22148;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.25rem;
-  width: 50px;
+  font-size: 1.5rem; 
+ height: 2.5rem;
+  /*width: 50px; */
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header__brand img {
-  width: 100%;
+  height: 2.5rem;
+  /*width: 100%; */
 }
 .main-nav {
-  display: inline-block;
+ /* display: inline-block;
   text-align: right;
   vertical-align: middle;
-  /*width: calc(100% - 122px); */
+  width: calc(100% - 122px); */
+  display: none;
 }
 
 .main-nav__items {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; 
+
 }
 
 .main-nav__item {
@@ -120,6 +129,19 @@ body {
   background: #b55b7f;
   border: none;
 }
+
+@media (min-width: 40px) {
+  .toggle-button {
+    display: none
+  }
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% -44px);
+    vertical-align: middle;
+  }
+}
+
 .main-footer {
   background: #170703;
   padding: 2rem;
@@ -134,8 +156,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  display: block;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -181,10 +203,11 @@ body {
   background: #b22148;
   border: 2px solid #fefdf5;
   font: inherit;
+  font-weight: bold;
   padding: 0.6rem 0.75rem;
   border-radius: 6px;
   color: #fefdf5;
-  margin: 0.75rem 0;
+ /* margin: 0.75rem 0; */
   cursor: pointer;
 }
 
@@ -212,4 +235,11 @@ body {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
