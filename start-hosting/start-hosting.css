@@ -1,0 +1,91 @@
+main {
+    padding-top: 2rem;
+}
+
+.signup-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b22148;
+}
+
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input, 
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+
+/* make checkbox and it's label appear on the same line */
+.signup-form input[type=checkbox],
+.signup-form input[type=checkbox] + label {
+    display: inline-block;
+    width: auto;
+    /* align checkbox with its label */
+    vertical-align: bottom;
+}
+
+/* styles for inputs that are not a checkbox*/
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid #b55b7f;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+/* change the default blue that appears in outline of input boxes in focus state*/
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: #dd8b97;
+    border-color: #b22148;
+
+}
+
+/* target styles for the checkbox*/ 
+.signup-form input[type="checkbox"] {
+    border: 2px solid #b22148;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    /* override default browser styles for checkboxes */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* by overriding default browser styles for checkbox we lost the ability to check it */
+.signup-form input[type="checkbox"]:checked {
+    background:#dd8b97;
+    border: #b22148;
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .signup-form {
+        margin: auto;
+        width: 25rem;
+    }
+}
+
+/* styles for invalid email input*/
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+    border: 2px solid red !important;
+    background: #faacac;
+}
