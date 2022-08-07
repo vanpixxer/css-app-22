@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
 main {
     padding-top: 2.5rem;
 }
@@ -17,10 +30,10 @@ main {
 } */
 
 .testimonial__image-container {
-    width: 100%;
+    width: 66%;
     max-width: 40rem;
-   /* display: inline-block; 
-    vertical-align: middle; */
+    display: inline-block; 
+    vertical-align: middle; 
     box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -31,8 +44,8 @@ main {
 
 .testimonial__info {
     text-align: right;
-    padding: 0.9rem;
-   /* display: inline-block; 
+    padding: 0.9rem; 
+    /*display: inline-block; 
     vertical-align: middle;
     width: 30%; */
 }

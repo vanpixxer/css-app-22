@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-}
+} */
 
 #product-overview {
   background: linear-gradient(to top, rgba(240, 212, 66, 0.7), transparent),
@@ -22,7 +24,7 @@ body {
 }
 
 #product-overview h1 {
-  color: #fefdf5;
+  color: #b22148;
   position: absolute;
   bottom: 5%;
   left: 3%;
@@ -47,10 +49,6 @@ body {
   font-size: 1.75rem;
 }
 
-#product-overview h1 {
-  color: #b22148;
-}
-
 /*.plan__list {
   width: 100%;
   margin: auto; 
@@ -69,14 +67,14 @@ body {
 
 .plan--highlighted {
   background: #b22148;
- /* box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2); 
   color: #fefdf5;
 }
 
 .plan__annotation {
   background: #fefdf5;
   color: #b22148;
-  padding: 8px;
+  padding: 0.5rem;
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
@@ -114,8 +112,8 @@ body {
 
 #key-features {
   background: #fbc35d;
-  margin-top: 80px;
-  padding: 16px;
+  margin-top: 5rem;
+  padding: 1rem;
   color: #b22148;
 }
 
@@ -139,7 +137,7 @@ body {
   border: 2px solid #fefdf5;
   border-radius: 50%;
   margin: auto;
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .key-feature__description {

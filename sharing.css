@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,13 +7,12 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-main {
+/*main {
   min-height: calc(100vh - 3.5rem - 8rem);
   margin-top: 3.5rem;
-}
+} */
 
 /* Styles for Modal in page */
 .backdrop {
@@ -32,14 +33,17 @@ main {
   left: 0;
   background: #b22148;
   padding: 0.5rem 1rem;
-  z-index: 1;
+  z-index: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
 }
 
 /* we want the logo to appear on the same line as the navigation links so make it inline-block */
-.main-header > div {
-  display: inline-block;
+/*.main-header > div {
+  display: inline-block; 
   vertical-align: middle;
-}
+} */
 
 .toggle-button {
   width: 3rem;
@@ -58,31 +62,33 @@ main {
 .toggle-button__bar {
   width: 100%;
   height: 0.2rem;
-  background: #fdf3be;
+  background: #fff6a7;
   display: block;
   margin: 0.6rem 0;
 }
 
 .main-header__brand {
-  color: #b22148;
+  color: #adbda4;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem; 
- height: 2.5rem;
-  /*width: 50px; */
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-block; 
+  /*height: 2.5rem; */
+  width: 50px; 
+  /*display: inline-block; 
+  vertical-align: middle; */
 }
 
 .main-header__brand img {
   height: 2.5rem;
+  vertical-align: middle;
   /*width: 100%; */
 }
 .main-nav {
- /* display: inline-block;
+  /*display: inline-block;
   text-align: right;
   vertical-align: middle;
-  width: calc(100% - 122px); */
+  width: calc(100% - 44px); */
   display: none;
 }
 
@@ -90,11 +96,13 @@ main {
   margin: 0;
   padding: 0;
   list-style: none; 
+  /* make this declaration a flexbox container for each .main-nav__item*/
+  display: flex;
 
 }
 
 .main-nav__item {
-  display: inline-block;
+  /*display: inline-block; */
   margin: 0 1rem;
 }
 
@@ -132,14 +140,15 @@ main {
 
 @media (min-width: 40px) {
   .toggle-button {
-    display: none
+    display: none;
   }
   .main-nav {
-    display: inline-block;
+    /*display: inline-block; 
     text-align: right;
-    width: calc(100% -44px);
-    vertical-align: middle;
-  }
+    width: calc(100% -44px); 
+    vertical-align: middle; */
+    display:flex;
+  } 
 }
 
 .main-footer {
@@ -152,12 +161,16 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+ /* text-align: center; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 .main-footer__link {
-  display: block;
+  /*display: block; */
   margin: 1rem 0;
+  padding: 0.3rem;
 }
 
 .main-footer__link a {
@@ -186,9 +199,13 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+ /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -245,8 +262,15 @@ main {
 }
 
 @media (min-width: 40rem) {
+  .mobile-nav {
+    display: none
+  }
   .main-footer__link {
-    display: inline-block;
+    /*display: inline-block; */
     margin: 0 1rem;
+  }
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
   }
 }
