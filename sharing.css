@@ -33,7 +33,7 @@ body {
   left: 0;
   background: #b22148;
   padding: 0.5rem 1rem;
-  z-index: 1; 
+  z-index: 60; 
   display: flex;
   align-items: center;
   justify-content: space-between; 
@@ -190,7 +190,7 @@ body {
   z-index: 101;
   top: 0;
   left: 0;
-  background: #b55b7f;;
+  background: #463d3a;
   width: 80%;
   height: 100vh;
 }

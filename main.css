@@ -42,7 +42,6 @@ body {
   }
 }
 
-
 .section-title {
   color: #b22148;
   text-align: center;
@@ -67,7 +66,7 @@ body {
 
 .plan--highlighted {
   background: #b22148;
-  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
   color: #fefdf5;
 }
 
@@ -92,17 +91,26 @@ body {
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .plan {
-    display: inline-block;
+    /*display: inline-block; */
     width: 30%;
-    vertical-align: middle;
+    /*vertical-align: middle; */
     min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
   .plan--highlighted {
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 30rem;
+    z-index: 50;
   }
 }
 
@@ -147,12 +155,16 @@ body {
 }
 
 @media (min-width: 40rem) {
-   .key-feature {
-     display: inline-block;
-     width: 30%;
-     vertical-align: top;
-     max-width: 25rem;
-   }
+  .key-feature {
+    /* display: inline-block; */
+    width: 30%;
+    /* vertical-align: top; */
+    max-width: 25rem;
+  }
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main-header {
@@ -164,10 +176,10 @@ body {
 /* MODAL STYLES */
 .modal {
   position: fixed;
-  display: none; 
+  display: none;
   z-index: 200;
   top: 20%;
-  left:30%;
+  left: 30%;
   width: 40%;
   background: #fefdf5;
   padding: 1rem;
